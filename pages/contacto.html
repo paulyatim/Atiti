@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Atiti - Contacto</title>
+</head>
+<body id="bodyContacto">
+    <!--Encabezado-->
+    <header>
+        <!--Logo y título de la página-->
+        <div class="logoConTitulo animate__animated animate__animated-delay-0 animate__animated-duration-4 animate__fadeIn">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo" class="logoConTitulo__logo"></a>
+            <a href="../index.html"><h1 class="logoConTitulo__titulo">Atiti</h1></a>
+        </div>
+    </header>
+    <!--Navegador del sitio-->
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+        <div class="container-fluid">
+            <!--Toggler para diapositivos más chicos-->
+          <button class="navbar-toggler animate__animated animate__animated-duration-4 animate__fadeIn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Items del navegador-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-4 animate__animated-duration-2 animate__fadeInLeft" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-3 animate__animated-duration-2 animate__fadeInLeft" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-2 animate__animated-duration-2 animate__fadeInLeft" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-1 animate__animated-duration-2 animate__fadeInLeft" href="../pages/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__animated-duration-2 animate__fadeInUp" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2 class="tituloPag animate__animated animate__animated-duration-4 animate__fadeIn">Contacto</h2>
+    <!--Formulario de contacto-->
+    <section id="formularioContacto" class="rounded animate__animated animate__animated-duration-4 animate__fadeIn">
+        <div class="formularioContacto">
+            <form action="contacto.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <label for="name">Nombre:</label>
+                <input id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="motive">Motivo de consulta:</label>
+                <select name="motivos" id="motive">
+                    <option value="eventos">Eventos en local</option>
+                    <option value="catering">Catering</option>
+                    <option value="recomendaciones">Recomendaciones / Reseñas</option>
+                    <option value="rrhh">Recursos Humanos</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+                <label for="comment">Consulta:</label><br>
+                <textarea name="comment" id="comment" style="resize: none;"></textarea><br>
+                <label for="subscripcion">Deseo recibir novedades y descuentos </label>
+                <input type="checkbox" id="subscripcion" name="subscripcion" value="subscripcion"><br>
+                <input type="reset" value="Resetear todo">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <!--Mapa con la ubicación del local-->
+    <section id="mapaContacto" class="animate__animated animate__animated-duration-4 animate__fadeIn">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4852219188892!2d-58.40217558450413!3d-34.591889864379816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99f71a1e7f%3A0xe0d98491753b21a1!2sLarrea%201300%2C%20C1117%20CABA!5e0!3m2!1ses-419!2sar!4v1628174978209!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="container-fluid"></iframe>
+    </section>
+    <!--Datos de contacto-->
+    <section id="datosContacto" class="datosContacto animate__animated animate__animated-duration-4 animate__fadeIn">
+        <div>
+            <p>Larrea 1300, CABA</p>
+        <p>Tel: 11-12345678</p>
+        <p>Dom-Jue: 9:00-23:00<br>
+        Vie-Sab: 9:00-2:00<br>
+        </p>
+        </div>
+    </section>
+    <!--Pie de página-->
+    <footer>
+        <p>Larrea 1300, CABA</p>
+        <p>Tel: 11-12345678</p>
+        <p>Dom-Jue: 9:00-23:00<br>
+        Vie-Sab: 9:00-2:00<br>
+        </p>
+        <p>Copyright © 2021 | Atiti</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

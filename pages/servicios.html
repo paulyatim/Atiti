@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Atiti - Servicios</title>
+</head> 
+<body id="bodyServicios">
+    <!--Encabezado-->
+    <header>
+        <!--Logo y título de la página-->
+        <div class="logoConTitulo animate__animated animate__animated-delay-0 animate__animated-duration-4 animate__fadeIn">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo" class="logoConTitulo__logo"></a>
+            <a href="../index.html"><h1 class="logoConTitulo__titulo">Atiti</h1></a>
+        </div>
+    </header>
+    <!--Navegador del sitio-->
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+        <div class="container-fluid">
+            <!--Toggler para diapositivos más chicos-->
+          <button class="navbar-toggler animate__animated animate__animated-duration-4 animate__fadeIn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Items del navegador-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-2 animate__animated-duration-2 animate__fadeInLeft" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-1 animate__animated-duration-2 animate__fadeInLeft" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__animated-duration-2 animate__fadeInUp" aria-current="page" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-1 animate__animated-duration-2 animate__fadeInRight" href="../pages/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-2 animate__animated-duration-2 animate__fadeInRight" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2 class="tituloPag animate__animated animate__animated-duration-4 animate__fadeIn">Servicios</h2>
+    <!--Sección 'Restaurant'-->
+    <!--Texto de la sección 'Restaurant'-->
+    <div id="txtRestaurant" class="textoSeccion animate__animated animate__animated-duration-4 animate__fadeIn">
+        <h3 class="textoSeccion__titulo">Restaurant</h3>
+        <p class="textoSeccion__texto">¡Te invitamos a que vengas a comer en nuestro local! Nuestro 
+            ambiente es increiblemente amistoso y cálido, para que puedas venir con tu familia o 
+            amigos. Ya sea para desayunar, almorzar o cenar, todos los días de la semana tenemos las 
+            puertas abiertas, con o sin reserva. Para realizar reservas nos pueden 
+            <a href="../pages/contacto.html">contactar</a>, especificando fecha y horario que precisan.
+        </p>
+    </div>
+    <!--Imagen de la sección 'Restaurant'-->
+    <div id="imgRestaurant" class="imagenSeccion animate__animated animate__animated-duration-4 animate__fadeIn">
+        <img src="../images/local.jpg" alt="foto restaurant afuera" class="rounded">
+    </div>
+    <!--Sección 'Eventos'-->
+    <!--Texto de la sección 'Eventos'-->
+    <div id="txtEventos" class="textoSeccion animate__animated animate__animated-duration-4 animate__fadeIn">
+        <h3 class="textoSeccion__titulo">Eventos</h3>
+        <p class="textoSeccion__texto">Puedes reservar nuestro salón para fiestas y eventos especiales. 
+            Puede ser un cumpleaños, boda o cualquier rumba que quieran hacer, tenemos un salón de 
+            fiestas ideal para cualquier ocasión, donde obviamente también disfrutarán de delicias 
+            venezolanas a su elección. Si estas interesado en realizar un evento acá, nos puedes 
+            <a href="../pages/contacto.html">contactar</a>, contándonos sobre tu evento, y nos pondremos en 
+            contacto contigo en breve.
+        </p>
+    </div>
+    <!--Imagen de la sección 'Eventos'-->
+    <div id="imgEventos" class="imagenSeccion animate__animated animate__animated-duration-4 animate__fadeIn">
+        <img src="../images/local_adentro.jpg" alt="foto sala eventos" class="rounded">
+    </div>
+    <!--Sección 'Catering'-->
+    <!--Texto de la sección 'Catering'-->
+    <div id="txtCatering" class="textoSeccion animate__animated animate__animated-duration-4 animate__fadeIn">
+        <h3 class="textoSeccion__titulo">Catering</h3>
+        <p class="textoSeccion__texto">También ofrecemos servicio de catering. Si no están interesados en 
+            realizar una fiesta en nuestro salón, siempre está la opción de llevar la fiesta a tu casa o a 
+            donde presicen. Seleccionando de nuestras opciones de catering, podemos personalizar la carta 
+            para que se ajuste a lo que estén buscando. Para más información nos pueden 
+            <a href="../pages/contacto.html">contactar</a>, para que podamos cuadrar en el mejor arreglo 
+            para su evento.
+        </p>
+    </div>
+    <!--Imagen de la sección 'Catering'-->
+    <div id="imgCatering" class="imagenSeccion animate__animated animate__animated-duration-4 animate__fadeIn">
+        <img src="../images/catering.jpg" alt="foto catering" class="rounded">
+    </div>
+    <!--Pie de página-->
+    <footer>
+        <p>Larrea 1300, CABA</p>
+        <p>Tel: 11-12345678</p>
+        <p>Dom-Jue: 9:00-23:00<br>
+        Vie-Sab: 9:00-2:00<br>
+        </p>
+        <p>Copyright © 2021 | Atiti</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

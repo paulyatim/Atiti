@@ -1,0 +1,394 @@
+@charset "UTF-8";
+.animate__animated-delay-1 {
+  animation-delay: 0.25s; }
+
+.animate__animated-delay-2 {
+  animation-delay: 0.5s; }
+
+.animate__animated-delay-3 {
+  animation-delay: 0.75s; }
+
+.animate__animated-delay-4 {
+  animation-delay: 1s; }
+
+.animate__animated-delay-5 {
+  animation-delay: 1.25s; }
+
+.animate__animated-delay-6 {
+  animation-delay: 1.5s; }
+
+.animate__animated-delay-7 {
+  animation-delay: 1.75s; }
+
+.animate__animated-delay-8 {
+  animation-delay: 2s; }
+
+.animate__animated-delay-9 {
+  animation-delay: 2.25s; }
+
+.animate__animated-delay-10 {
+  animation-delay: 2.5s; }
+
+.animate__animated-delay-11 {
+  animation-delay: 2.75s; }
+
+.animate__animated-delay-12 {
+  animation-delay: 3s; }
+
+.animate__animated-delay-13 {
+  animation-delay: 3.25s; }
+
+.animate__animated-delay-14 {
+  animation-delay: 3.5s; }
+
+.animate__animated-delay-15 {
+  animation-delay: 3.75s; }
+
+.animate__animated-delay-16 {
+  animation-delay: 4s; }
+
+.animate__animated-delay-17 {
+  animation-delay: 4.25s; }
+
+.animate__animated-delay-18 {
+  animation-delay: 4.5s; }
+
+.animate__animated-delay-19 {
+  animation-delay: 4.75s; }
+
+.animate__animated-duration-1 {
+  animation-duration: 0.5s; }
+
+.animate__animated-duration-2 {
+  animation-duration: 1s; }
+
+.animate__animated-duration-3 {
+  animation-duration: 1.5s; }
+
+.animate__animated-duration-4 {
+  animation-duration: 2s; }
+
+.animate__animated-duration-5 {
+  animation-duration: 2.5s; }
+
+.animate__animated-duration-6 {
+  animation-duration: 3s; }
+
+.animate__animated-duration-7 {
+  animation-duration: 3.5s; }
+
+.animate__animated-duration-8 {
+  animation-duration: 4s; }
+
+.animate__animated-duration-9 {
+  animation-duration: 4.5s; }
+
+body {
+  background-color: #fff4e7;
+  background-image: url("../images/fondo.png");
+  background-size: 50vw;
+  background-position: 25% 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif; }
+
+/* Estilo para cada título de cada página */
+.tituloPag {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin: 4vw auto 8vw auto;
+  grid-area: subtitulo; }
+
+/* Estilo del header */
+header {
+  grid-area: header;
+  /* Estilo del enlace del título de la página */
+  /* Estilo del logo de la página */
+  /* Estilo del título de la página */ }
+  header a {
+    text-decoration: none;
+    color: #56070e; }
+    header a :hover {
+      color: #56070e; }
+  header .logoConTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4vw; }
+  header .logoConTitulo__logo {
+    height: 100px; }
+  header .logoConTitulo__titulo {
+    font-size: 100px;
+    text-align: center;
+    color: #56070e;
+    font-weight: normal; }
+
+/* Estilo del footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5vw;
+  background-color: #56070e;
+  color: #fff4e7;
+  height: fit-content;
+  padding: 2vw;
+  grid-area: footer; }
+
+/* Estilo de la barra de navegación */
+nav {
+  margin: 0 auto 2vw;
+  grid-area: nav; }
+
+/* Estilo de navegación de bootstrap */
+.navbar {
+  font-size: 20px;
+  text-transform: uppercase; }
+  .navbar .navbar-toggler {
+    margin: 0 auto;
+    border: none; }
+  .navbar #navbarNav {
+    justify-content: center;
+    margin-top: 2vw; }
+    .navbar #navbarNav .nav-item {
+      margin: 0.5vw; }
+      .navbar #navbarNav .nav-item .nav-link {
+        text-align: center; }
+
+/* Estilo de los textos de las páginas */
+.textoSeccion {
+  padding: 3vw; }
+
+/* Estilo para cada subtítulo de cada página */
+.textoSeccion__titulo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 2vw;
+  text-align: center; }
+
+.textoSeccion__texto {
+  font-size: 18px;
+  line-height: 150%; }
+
+/* Estilo de las imágenes en las páginas */
+.imagenSeccion {
+  padding: 3vw; }
+  .imagenSeccion img {
+    width: 100%;
+    display: block; }
+
+.imagenSeccion--full {
+  padding: 0; }
+
+/* Estilo de la página "Home" */
+#bodyHome {
+  display: grid;
+  grid-template-areas: "header" "nav" "descripcion" "imagenHome" "mapaHome" "footer";
+  /* Estilo de la imagen en el home */ }
+  #bodyHome #descripcionSitio {
+    grid-area: descripcion;
+    margin-top: 3vw;
+    margin-bottom: 6vw; }
+    #bodyHome #descripcionSitio p {
+      font-size: 20px;
+      text-align: center;
+      padding: 0 3vw; }
+  #bodyHome #imagenHome {
+    grid-area: imagenHome; }
+  #bodyHome #mapaHome {
+    grid-area: mapaHome;
+    display: block;
+    margin: 6vw auto 0 auto;
+    width: 100%; }
+    #bodyHome #mapaHome iframe {
+      width: 100%;
+      height: 80vw; }
+
+/* Estilo de la página "Nosotros" */
+#bodyNosotros {
+  display: grid;
+  grid-template-areas: "header" "nav" "subtitulo" "txtHistoria" "imgHistoria" "txtMision" "imgMision" "footer";
+  grid-template-columns: 100%; }
+  #bodyNosotros #txtHistoria {
+    grid-area: txtHistoria; }
+  #bodyNosotros #imgHistoria {
+    grid-area: imgHistoria; }
+  #bodyNosotros #txtMision {
+    grid-area: txtMision; }
+  #bodyNosotros #imgMision {
+    grid-area: imgMision; }
+
+/* Estilo de la página "Servicios" */
+#bodyServicios {
+  display: grid;
+  grid-template-areas: "header" "nav" "subtitulo" "txtRestaurant" "imgRestaurant" "txtEventos" "imgEventos" "txtCatering" "imgCatering" "footer";
+  grid-template-columns: 100%; }
+  #bodyServicios #txtRestaurant {
+    grid-area: txtRestaurant; }
+  #bodyServicios #imgRestaurant {
+    grid-area: imgRestaurant; }
+  #bodyServicios #txtEventos {
+    grid-area: txtEventos; }
+  #bodyServicios #imgEventos {
+    grid-area: imgEventos; }
+  #bodyServicios #txtCatering {
+    grid-area: txtCatering; }
+  #bodyServicios #imgCatering {
+    grid-area: imgCatering; }
+
+/* Estilo de la página "Menu" */
+#bodyMenu {
+  display: grid;
+  grid-template-areas: "header" "nav" "subtitulo" "tituloMenu" "entradasMenu" "platosMenu" "postresMenu" "bebidasMenu" "footer"; }
+  #bodyMenu #entradasMenu {
+    grid-area: entradasMenu; }
+  #bodyMenu #platosMenu {
+    grid-area: platosMenu; }
+  #bodyMenu #postresMenu {
+    grid-area: postresMenu; }
+  #bodyMenu #bebidasMenu {
+    grid-area: bebidasMenu; }
+  #bodyMenu .titulosMenu {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 3vw; }
+
+/* Estilo del carousel del menú */
+.carousel {
+  margin: 3vw auto;
+  width: 100%; }
+  .carousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 1vw; }
+  .carousel h5 {
+    font-size: 24px; }
+  .carousel p {
+    font-size: 18px; }
+
+/* Estilo de la página "Contacto" */
+#bodyContacto {
+  display: grid;
+  grid-template-areas: "header" "nav" "subtitulo" "formulario" "datosContacto" "mapaContacto" "footer";
+  grid-template-columns: 100%;
+  /* Estilos del formulario */ }
+  #bodyContacto #mapaContacto {
+    grid-area: mapaContacto;
+    display: block;
+    margin-top: 3vw; }
+    #bodyContacto #mapaContacto iframe {
+      width: 100%;
+      height: 80vw; }
+  #bodyContacto #datosContacto {
+    grid-area: datosContacto;
+    background-color: #56070e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw; }
+    #bodyContacto #datosContacto div {
+      color: #fff4e7;
+      font-size: 18px;
+      text-align: center; }
+  #bodyContacto #formularioContacto {
+    grid-area: formulario;
+    margin: 20px auto;
+    padding: 10px;
+    width: 95%;
+    line-height: 16px;
+    background-color: #56070e;
+    color: #fff4e7;
+    font-size: 16px; }
+    #bodyContacto #formularioContacto input, #bodyContacto #formularioContacto textarea {
+      width: 100%;
+      padding: 4px;
+      margin: 5px 0; }
+    #bodyContacto #formularioContacto label {
+      margin: 10px 0;
+      font-weight: bold; }
+    #bodyContacto #formularioContacto textarea {
+      height: 200px; }
+    #bodyContacto #formularioContacto #subscripcion {
+      width: auto;
+      height: 12px; }
+
+/* Estilo para diapositivos de ancho mayor a 600px */
+@media only screen and (min-width: 600px) {
+  #bodyMenu {
+    grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "tituloMenu tituloMenu" "entradasMenu platosMenu" "postresMenu bebidasMenu" "footer footer";
+    grid-template-columns: 50% 50%; }
+  .carousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0.5vw;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .carousel .carousel-indicators {
+    margin-bottom: 0; }
+  .carousel h5 {
+    font-size: 24px; }
+  .carousel p {
+    font-size: 16px; }
+  .carousel .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>"); }
+  .carousel .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>"); } }
+
+/* Estilo para diapositivos de ancho mayor a 992px */
+@media only screen and (min-width: 992px) {
+  .tituloPag {
+    font-size: 60px;
+    margin: 2vw auto 4vw auto; }
+  header .logoConTitulo {
+    margin-top: 2vw; }
+  .navbar #navbarNav .nav-item {
+    margin: 0 4vw; }
+  .textoSeccion {
+    padding: 1.5vw; }
+  .textoSeccion__titulo {
+    font-size: 48px;
+    margin-bottom: 1vw;
+    text-align: left; }
+  .textoSeccion__texto {
+    line-height: 2vw; }
+  .imagenSeccion {
+    padding: 1.5vw; }
+  .imagenSeccion--full {
+    padding: 0; }
+  #bodyHome #descripcionSitio {
+    margin-top: 1.5vw;
+    margin-bottom: 3vw; }
+    #bodyHome #descripcionSitio p {
+      font-size: 24px; }
+  #bodyHome #mapaHome {
+    margin: 3vw auto 0 auto; }
+    #bodyHome #mapaHome iframe {
+      height: 40vw; }
+  #bodyNosotros {
+    grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "txtHistoria imgHistoria" "imgMision txtMision" "footer footer";
+    grid-template-columns: 50% 50%; }
+  #bodyServicios {
+    grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "imgRestaurant txtRestaurant" "txtEventos imgEventos" "imgCatering txtCatering" "footer footer";
+    grid-template-columns: 50% 50%; }
+  #bodyMenu .titulosMenu {
+    font-size: 42px;
+    margin-bottom: 1.5vw; }
+  .carousel {
+    margin: 1.5vw auto;
+    width: 90%; }
+    .carousel .carousel-caption {
+      padding: 1vw; }
+  #bodyContacto {
+    grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "formulario formulario" "mapaContacto datosContacto" "footer footer";
+    grid-template-columns: 75% 25%; }
+    #bodyContacto #mapaContacto {
+      margin-top: 1.5vw; }
+      #bodyContacto #mapaContacto iframe {
+        height: 40vw; }
+    #bodyContacto #datosContacto {
+      margin-top: 1.5vw;
+      height: 40vw; }
+    #bodyContacto #formularioContacto {
+      width: 50%; } }

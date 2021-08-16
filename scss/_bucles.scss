@@ -1,0 +1,10 @@
+@for $i from 1 to 20 {
+    .animate__animated-delay-#{$i} {
+        animation-delay: 0.25s * $i;
+    }
+}
+@for $i from 1 to 10 {
+    .animate__animated-duration-#{$i} {
+        animation-duration: 0.5s * $i;
+    }
+}

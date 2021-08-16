@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Atiti - Menú</title>
+</head>
+<body id="bodyMenu">
+    <!--Encabezado-->
+    <header>
+        <!--Logo y título de la página-->
+        <div class="logoConTitulo animate__animated animate__animated-delay-0 animate__animated-duration-4 animate__fadeIn">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo" class="logoConTitulo__logo"></a>
+            <a href="../index.html"><h1 class="logoConTitulo__titulo">Atiti</h1></a>
+        </div>
+    </header>
+    <!--Navegador del sitio-->
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+        <div class="container-fluid">
+            <!--Toggler para diapositivos más chicos-->
+          <button class="navbar-toggler animate__animated animate__animated-duration-4 animate__fadeIn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Items del navegador-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-3 animate__animated-duration-2 animate__fadeInLeft" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-2 animate__animated-duration-2 animate__fadeInLeft" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-1 animate__animated-duration-2 animate__fadeInLeft" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active animate__animated animate__animated-duration-2 animate__fadeInUp" aria-current="page" href="../pages/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__animated-delay-1 animate__animated-duration-2 animate__fadeInRight" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2 class="tituloPag animate__animated animate__animated-duration-4 animate__fadeIn">Menú</h2>
+    <!--Menú de entradas-->
+    <section id="entradasMenu" class="animate__animated animate__animated-duration-4 animate__fadeIn">
+        <h3 class="titulosMenu">Entradas</h3>
+        <div id="carouselEntradas" class="carousel slide col-lg-4 col-md-6 col-sm-8 container" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselEntradas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselEntradas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselEntradas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselEntradas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../images/menu/tequenos.jpeg" class="d-block w-100" alt="tequenos">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Tequeños</h5>
+                        <p>6 tequeños tradicionales rellenos de queso blanco</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/arepitas_y_nata.jpeg" class="d-block w-100" alt="arepitas con nata">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Arepitas con nata</h5>
+                        <p>8 arepitas fritas con nata para acompañar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/tostones.jpeg" class="d-block w-100" alt="tostones">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Tostones</h5>
+                        <p>Platano frito acompañado por salsa a elección</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/yuca_frita.jpeg" class="d-block w-100" alt="yuca frita">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Yuca frita</h5>
+                        <p>Yuca (mandioca en Argentina) acompañado por salsa a elección</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEntradas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEntradas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--Menú de platos-->
+    <section id="platosMenu" class="animate__animated animate__animated-duration-4 animate__fadeIn">
+        <h3 class="titulosMenu">Platos</h3>
+        <div id="carouselPlatos" class="carousel slide col-lg-4 col-md-6 col-sm-8 container" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselPlatos" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../images/menu/arepa_reina_pepiada.jpeg" class="d-block w-100" alt="arepa reina pepiada">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Arepa Reina Pepiada</h5>
+                        <p>Tortilla de maiz a la plancha rellena de pollo, palta y mayonesa</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/arepa_queso_blanco.jpeg" class="d-block w-100" alt="arepa queso blanco">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Arepa queso blanco</h5>
+                        <p>Tortilla de maiz a la plancha rellena de queso blanco</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/arepa_carne_mechada.jpeg" class="d-block w-100" alt="arepa carne mechada">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Arepa carne mechada</h5>
+                        <p>Tortilla de maiz a la plancha rellena de carne desmenuzada</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/arepa_pabellon.jpeg" class="d-block w-100" alt="arepa pabellon">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Arepa pabellón</h5>
+                        <p>Tortilla de maiz a la plancha rellena de carne desmenuzada, porotos negros, plátano frito y queso blanco</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/cachapa_queso_blanco.jpeg" class="d-block w-100" alt="cachapa queso blanco">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Cachapa con queso blanco</h5>
+                        <p>Tortilla de maiz dulce, a la plancha, rellena de queso blanco</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/pabellon.jpeg" class="d-block w-100" alt="pabellon">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Pabellón</h5>
+                        <p>Plato típico de Venezuela. Arroz blanco, carne mechada, plátano frito y porotos negros</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/empanadas_queso_blanco.jpeg" class="d-block w-100" alt="empanada queso blanco">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Empanadas de queso blanco</h5>
+                        <p>3 empanadas venezolanas fritas, rellenas de queso blanco</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/empanadas_carne_mechada.jpeg" class="d-block w-100" alt="empanada carne mechada">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Empanadas de carne mechada</h5>
+                        <p>3 empanadas venezolanas fritas, rellenas de carne mechada</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlatos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPlatos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--Menú de postres-->
+    <section id="postresMenu" class="animate__animated animate__animated-duration-4 animate__fadeIn">
+        <h3 class="titulosMenu">Postres</h3>
+        <div id="carouselPostres" class="carousel slide col-lg-4 col-md-6 col-sm-8 container" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPostres" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPostres" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPostres" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../images/menu/tres_leches.png" class="d-block w-100" alt="tres leches">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Tres Leches</h5>
+                        <p>Torta fundida en leche nata, condensada y evaporada. Con un toque de canela</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/quesillo.jpeg" class="d-block w-100" alt="quesillo">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Quesillo</h5>
+                        <p>Flan de huevo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/golfeado.jpeg" class="d-block w-100" alt="golfeado">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Golfeado</h5>
+                        <p>Roll relleno de papelón, anís y queso blanco</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostres" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPostres" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--Menú de bebidas-->
+    <section id="bebidasMenu" class="animate__animated animate__animated-duration-4 animate__fadeIn">
+        <h3 class="titulosMenu">Bebidas</h3>
+        <div id="carouselBebidas" class="carousel slide col-lg-4 col-md-6 col-sm-8 container" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBebidas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselBebidas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselBebidas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselBebidas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../images/menu/chicha.jpeg" class="d-block w-100" alt="chicha">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Chicha</h5>
+                        <p>Bebida típica de Venezuela a base de arroz y leche, con canela y leche condensada</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/papelon.jpeg" class="d-block w-100" alt="papelon con limon">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Papelón con limón</h5>
+                        <p>Refrescante bebida venezolana hecha con rapadura, agua y jugo de limón</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/malta_regional.jpeg" class="d-block w-100" alt="malta regional">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Malta Regional</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/menu/malta_polar.jpeg" class="d-block w-100" alt="malta polar">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Malta Polar</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBebidas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBebidas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--Pie de página-->
+    <footer>
+        <p>Larrea 1300, CABA</p>
+        <p>Tel: 11-12345678</p>
+        <p>Dom-Jue: 9:00-23:00<br>
+        Vie-Sab: 9:00-2:00<br>
+        </p>
+        <p>Copyright © 2021 | Atiti</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
