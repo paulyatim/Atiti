@@ -238,7 +238,8 @@ nav {
 /* Estilo de la página "Menu" */
 #bodyMenu {
   display: grid;
-  grid-template-areas: "header" "nav" "subtitulo" "tituloMenu" "entradasMenu" "platosMenu" "postresMenu" "bebidasMenu" "footer"; }
+  grid-template-areas: "header" "nav" "subtitulo" "tituloMenu" "entradasMenu" "platosMenu" "postresMenu" "bebidasMenu" "footer";
+  /* Estilo del carousel del menú */ }
   #bodyMenu #entradasMenu {
     grid-area: entradasMenu; }
   #bodyMenu #platosMenu {
@@ -251,18 +252,20 @@ nav {
     font-size: 32px;
     text-align: center;
     margin-bottom: 3vw; }
-
-/* Estilo del carousel del menú */
-.carousel {
-  margin: 3vw auto;
-  width: 100%; }
-  .carousel .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 1vw; }
-  .carousel h5 {
-    font-size: 24px; }
-  .carousel p {
-    font-size: 18px; }
+  #bodyMenu .carousel {
+    margin: 3vw auto;
+    width: 100%; }
+    #bodyMenu .carousel .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 1vw; }
+    #bodyMenu .carousel h5 {
+      font-size: 24px; }
+    #bodyMenu .carousel p {
+      font-size: 18px; }
+    #bodyMenu .carousel .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>"); }
+    #bodyMenu .carousel .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>"); }
 
 /* Estilo de la página "Contacto" */
 #bodyContacto {
@@ -315,26 +318,22 @@ nav {
   #bodyMenu {
     grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "tituloMenu tituloMenu" "entradasMenu platosMenu" "postresMenu bebidasMenu" "footer footer";
     grid-template-columns: 50% 50%; }
-  .carousel .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 0.5vw;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .carousel .carousel-indicators {
-    margin-bottom: 0; }
-  .carousel h5 {
-    font-size: 24px; }
-  .carousel p {
-    font-size: 16px; }
-  .carousel .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>"); }
-  .carousel .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>"); } }
+    #bodyMenu .carousel .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 0.5vw;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 2vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    #bodyMenu .carousel .carousel-indicators {
+      margin-bottom: 0; }
+    #bodyMenu .carousel h5 {
+      font-size: 24px; }
+    #bodyMenu .carousel p {
+      font-size: 16px; } }
 
 /* Estilo para diapositivos de ancho mayor a 992px */
 @media only screen and (min-width: 992px) {

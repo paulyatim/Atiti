@@ -205,7 +205,6 @@ nav {
         text-align: center;
         margin-bottom: 3vw;
     }
-}
     /* Estilo del carousel del menú */
     .carousel {
         margin: 3vw auto;
@@ -220,7 +219,14 @@ nav {
         p {
             font-size: 18px;
         }
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+        }
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+        }
     }
+}
 /* Estilo de la página "Contacto" */
 #bodyContacto {
     display: grid;
@@ -295,33 +301,27 @@ nav {
             "postresMenu bebidasMenu"
             "footer footer";
         grid-template-columns: 50% 50%;
-    }
-    .carousel {
-        .carousel-caption {
-            background-color: rgba(0, 0, 0, 0.25);
-            border-radius: 0.5vw;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 2vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .carousel-indicators {
-            margin-bottom: 0;
-        }
-        h5 {
-            font-size: 24px;
-        }
-        p {
-            font-size: 16px;
-        }
-        .carousel-control-prev-icon {
-            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
-        }
-        .carousel-control-next-icon {
-            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+        .carousel {
+            .carousel-caption {
+                background-color: rgba(0, 0, 0, 0.25);
+                border-radius: 0.5vw;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding: 2vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .carousel-indicators {
+                margin-bottom: 0;
+            }
+            h5 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
         }
     }
 }
