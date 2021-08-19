@@ -394,7 +394,8 @@ nav {
     display: none;
     font-size: 80px; }
   #bodyHome #bannersHome div::before {
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 2s; }
   #bodyHome #bannersHome div:hover {
     background-color: rgba(0, 0, 0, 0.35); }
     #bodyHome #bannersHome div:hover h2 {
