@@ -182,8 +182,7 @@ nav {
 /* Estilo de la página "Home" */
 #bodyHome {
   display: grid;
-  grid-template-areas: "header" "nav" "descripcion" "imagenHome" "mapaHome" "footer";
-  /* Estilo de la imagen en el home */ }
+  grid-template-areas: "header" "nav" "descripcion" "imagenesHome" "footer"; }
   #bodyHome #descripcionSitio {
     grid-area: descripcion;
     margin-top: 3vw;
@@ -192,16 +191,42 @@ nav {
       font-size: 20px;
       text-align: center;
       padding: 0 3vw; }
-  #bodyHome #imagenHome {
-    grid-area: imagenHome; }
-  #bodyHome #mapaHome {
-    grid-area: mapaHome;
-    display: block;
-    margin: 6vw auto 0 auto;
-    width: 100%; }
-    #bodyHome #mapaHome iframe {
-      width: 100%;
-      height: 80vw; }
+  #bodyHome #bannersHome {
+    grid-area: imagenesHome;
+    display: grid; }
+    #bodyHome #bannersHome a {
+      text-decoration: none; }
+    #bodyHome #bannersHome div {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      height: 50vw;
+      width: 95%;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #bodyHome #bannersHome div h2 {
+        font-size: 50px;
+        color: #fff4e7;
+        margin-bottom: 0;
+        position: relative; }
+    #bodyHome #bannersHome div::before {
+      content: "";
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.35); }
+    #bodyHome #bannersHome #bannerRestaurante {
+      background-image: url(../images/banner_restaurante.png); }
+    #bodyHome #bannersHome #bannerEventos {
+      background-image: url(../images/banner_eventos.png); }
+    #bodyHome #bannersHome #bannerCatering {
+      background-image: url(../images/banner_catering.png); }
 
 /* Estilo de la página "Nosotros" */
 #bodyNosotros {
@@ -220,12 +245,12 @@ nav {
 /* Estilo de la página "Servicios" */
 #bodyServicios {
   display: grid;
-  grid-template-areas: "header" "nav" "subtitulo" "txtRestaurant" "imgRestaurant" "txtEventos" "imgEventos" "txtCatering" "imgCatering" "footer";
+  grid-template-areas: "header" "nav" "subtitulo" "txtRestaurante" "imgRestaurante" "txtEventos" "imgEventos" "txtCatering" "imgCatering" "footer";
   grid-template-columns: 100%; }
-  #bodyServicios #txtRestaurant {
-    grid-area: txtRestaurant; }
-  #bodyServicios #imgRestaurant {
-    grid-area: imgRestaurant; }
+  #bodyServicios #txtRestaurante {
+    grid-area: txtRestaurante; }
+  #bodyServicios #imgRestaurante {
+    grid-area: imgRestaurante; }
   #bodyServicios #txtEventos {
     grid-area: txtEventos; }
   #bodyServicios #imgEventos {
@@ -315,6 +340,10 @@ nav {
 
 /* Estilo para diapositivos de ancho mayor a 600px */
 @media only screen and (min-width: 600px) {
+  #bodyHome #bannersHome div {
+    height: 20vw; }
+    #bodyHome #bannersHome div h2 {
+      font-size: 50px; }
   #bodyMenu {
     grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "tituloMenu tituloMenu" "entradasMenu platosMenu" "postresMenu bebidasMenu" "footer footer";
     grid-template-columns: 50% 50%; }
@@ -361,15 +390,22 @@ nav {
     margin-bottom: 3vw; }
     #bodyHome #descripcionSitio p {
       font-size: 24px; }
-  #bodyHome #mapaHome {
-    margin: 3vw auto 0 auto; }
-    #bodyHome #mapaHome iframe {
-      height: 40vw; }
+  #bodyHome #bannersHome div h2 {
+    display: none;
+    font-size: 80px; }
+  #bodyHome #bannersHome div::before {
+    background-color: rgba(0, 0, 0, 0); }
+  #bodyHome #bannersHome div:hover {
+    background-color: rgba(0, 0, 0, 0.35); }
+    #bodyHome #bannersHome div:hover h2 {
+      display: block; }
+  #bodyHome #bannersHome div:hover::before {
+    background-color: rgba(0, 0, 0, 0.35); }
   #bodyNosotros {
     grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "txtHistoria imgHistoria" "imgMision txtMision" "footer footer";
     grid-template-columns: 50% 50%; }
   #bodyServicios {
-    grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "imgRestaurant txtRestaurant" "txtEventos imgEventos" "imgCatering txtCatering" "footer footer";
+    grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "imgRestaurante txtRestaurante" "txtEventos imgEventos" "imgCatering txtCatering" "footer footer";
     grid-template-columns: 50% 50%; }
   #bodyMenu .titulosMenu {
     font-size: 42px;

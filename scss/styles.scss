@@ -115,8 +115,7 @@ nav {
         "header"
         "nav"
         "descripcion"
-        "imagenHome"
-        "mapaHome"
+        "imagenesHome"
         "footer";
         #descripcionSitio {
             grid-area: descripcion;
@@ -128,18 +127,48 @@ nav {
                 padding: 0 3vw;
             }
         }
-        /* Estilo de la imagen en el home */
-        #imagenHome {
-            grid-area: imagenHome;
-        }
-        #mapaHome {
-            grid-area: mapaHome;
-            display: block;
-            margin: 6vw auto 0 auto;
-            width: 100%;
-            iframe {
-                width: 100%;
-                height: 80vw;
+        #bannersHome {
+            grid-area: imagenesHome;
+            display: grid;
+            a {
+                text-decoration: none;
+            }
+            div {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                height: 50vw;
+                width: 95%;
+                margin: 20px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    font-size: 50px;
+                    color: $crema;
+                    margin-bottom: 0;
+                    position: relative;
+                }
+            }
+            div::before {    
+                content: "";
+                background-size: cover;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-color: rgba(0, 0, 0, 0.35);
+          }
+            #bannerRestaurante {
+                background-image: url(../images/banner_restaurante.png);
+            }
+            #bannerEventos {
+                background-image: url(../images/banner_eventos.png);
+            }
+            #bannerCatering {
+                background-image: url(../images/banner_catering.png);
             }
         }
 }
@@ -168,16 +197,16 @@ nav {
         "header"
         "nav"
         "subtitulo"
-        "txtRestaurant"
-        "imgRestaurant"
+        "txtRestaurante"
+        "imgRestaurante"
         "txtEventos"
         "imgEventos"
         "txtCatering"
         "imgCatering"
         "footer";
     grid-template-columns: 100%;
-    #txtRestaurant {grid-area: txtRestaurant;}
-    #imgRestaurant {grid-area: imgRestaurant;}
+    #txtRestaurante {grid-area: txtRestaurante;}
+    #imgRestaurante {grid-area: imgRestaurante;}
     #txtEventos {grid-area: txtEventos;}
     #imgEventos {grid-area: imgEventos;}
     #txtCatering {grid-area: txtCatering;}
@@ -291,6 +320,16 @@ nav {
 }
 /* Estilo para diapositivos de ancho mayor a 600px */
 @media only screen and (min-width: 600px) {
+    #bodyHome {
+        #bannersHome {
+            div {
+                height: 20vw;
+                h2 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }    
     #bodyMenu {
         grid-template-areas:
             "header header"
@@ -368,10 +407,25 @@ nav {
                 font-size: 24px;
             }
         }
-        #mapaHome {
-            margin: 3vw auto 0 auto;
-            iframe {
-                height: 40vw;
+        #bannersHome {
+            div {
+                h2 {
+                    display: none;
+                    font-size: 80px;
+                }
+            }
+            div::before {
+                background-color: rgba(0, 0, 0, 0);
+            }
+            div:hover {
+                background-color: rgba(0, 0, 0, 0.35);
+                h2 {
+                    display: block;
+                }
+            }
+            div:hover::before {
+                background-color: rgba(0, 0, 0, 0.35);
+                
             }
         }
     }
@@ -390,7 +444,7 @@ nav {
             "header header"
             "nav nav"
             "subtitulo subtitulo"
-            "imgRestaurant txtRestaurant"
+            "imgRestaurante txtRestaurante"
             "txtEventos imgEventos"
             "imgCatering txtCatering"
             "footer footer";
