@@ -127,12 +127,12 @@ header {
 footer {
   text-align: center;
   font-size: 12px;
-  margin-top: 5vw;
   background-color: #56070e;
   color: #fff4e7;
   height: fit-content;
-  padding: 2vw;
   grid-area: footer; }
+  footer p {
+    margin: 10px; }
 
 /* Estilo de la barra de navegación */
 nav {
