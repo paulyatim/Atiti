@@ -220,7 +220,7 @@ nav {
       right: 0px;
       bottom: 0px;
       left: 0px;
-      background-color: rgba(0, 0, 0, 0.35); }
+      background-color: rgba(0, 0, 0, 0.4); }
     #bodyHome #bannersHome #bannerRestaurante {
       background-image: url(../images/banner_restaurante.png); }
     #bodyHome #bannersHome #bannerEventos {
@@ -391,17 +391,16 @@ nav {
     #bodyHome #descripcionSitio p {
       font-size: 24px; }
   #bodyHome #bannersHome div h2 {
-    display: none;
-    font-size: 80px; }
+    font-size: 80px;
+    opacity: 0;
+    transition: opacity 1s; }
   #bodyHome #bannersHome div::before {
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 2s; }
-  #bodyHome #bannersHome div:hover {
-    background-color: rgba(0, 0, 0, 0.35); }
-    #bodyHome #bannersHome div:hover h2 {
-      display: block; }
+    background-color: #00000000;
+    transition: background-color 1s; }
+  #bodyHome #bannersHome div:hover h2 {
+    opacity: 1; }
   #bodyHome #bannersHome div:hover::before {
-    background-color: rgba(0, 0, 0, 0.35); }
+    background-color: rgba(0, 0, 0, 0.4); }
   #bodyNosotros {
     grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "txtHistoria imgHistoria" "imgMision txtMision" "footer footer";
     grid-template-columns: 50% 50%; }

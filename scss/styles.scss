@@ -160,7 +160,7 @@ nav {
                 right: 0px;
                 bottom: 0px;
                 left: 0px;
-                background-color: rgba(0, 0, 0, 0.35);
+                background-color: rgba(0, 0, 0, 0.4);
           }
             #bannerRestaurante {
                 background-image: url(../images/banner_restaurante.png);
@@ -411,22 +411,22 @@ nav {
         #bannersHome {
             div {
                 h2 {
-                    display: none;
                     font-size: 80px;
+                    opacity: 0;
+                    transition: opacity 1s;
                 }
             }
             div::before {
-                background-color: rgba(0, 0, 0, 0);
-                transition: background-color 2s;
+                background-color: #00000000;
+                transition: background-color 1s;
             }
             div:hover {
-                background-color: rgba(0, 0, 0, 0.35);
                 h2 {
-                    display: block;
+                    opacity: 1;
                 }
             }
             div:hover::before {
-                background-color: rgba(0, 0, 0, 0.35);
+                background-color: rgba(0, 0, 0, 0.4);
                 
             }
         }
