@@ -86,8 +86,7 @@
 body {
   background-color: #fff4e7;
   background-image: url("../images/fondo.png");
-  background-size: 50vw;
-  background-position: 25% 0;
+  background-size: 200px;
   margin: 0;
   font-family: 'Josefin Sans', sans-serif; }
 
@@ -96,7 +95,7 @@ body {
   font-size: 42px;
   font-weight: bold;
   text-align: center;
-  margin: 4vw auto 8vw auto;
+  margin: 20px auto 40px auto;
   grid-area: subtitulo; }
 
 /* Estilo del header */
@@ -126,13 +125,21 @@ header {
 /* Estilo del footer */
 footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #56070e;
   color: #fff4e7;
   height: fit-content;
-  grid-area: footer; }
+  grid-area: footer;
+  padding: 20px;
+  margin-top: 20px; }
   footer p {
     margin: 10px; }
+  footer .fab {
+    padding: 0 20px 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff4e7; }
 
 /* Estilo de la barra de navegación */
 nav {
@@ -182,7 +189,7 @@ nav {
 /* Estilo de la página "Home" */
 #bodyHome {
   display: grid;
-  grid-template-areas: "header" "nav" "descripcion" "imagenesHome" "footer"; }
+  grid-template-areas: "header" "nav" "bannersHome" "footer"; }
   #bodyHome #descripcionSitio {
     grid-area: descripcion;
     margin-top: 3vw;
@@ -192,7 +199,7 @@ nav {
       text-align: center;
       padding: 0 3vw; }
   #bodyHome #bannersHome {
-    grid-area: imagenesHome;
+    grid-area: bannersHome;
     display: grid; }
     #bodyHome #bannersHome a {
       text-decoration: none; }
@@ -200,6 +207,7 @@ nav {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      border-radius: 5px;
       position: relative;
       height: 50vw;
       width: 95%;
@@ -220,7 +228,8 @@ nav {
       right: 0px;
       bottom: 0px;
       left: 0px;
-      background-color: rgba(0, 0, 0, 0.4); }
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 5px; }
     #bodyHome #bannersHome #bannerRestaurante {
       background-image: url(../images/banner_restaurante.png); }
     #bodyHome #bannersHome #bannerEventos {
@@ -288,9 +297,15 @@ nav {
     #bodyMenu .carousel p {
       font-size: 18px; }
     #bodyMenu .carousel .carousel-control-prev-icon {
-      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>"); }
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+      background-size: 20px;
+      background-color: white;
+      border-radius: 20px; }
     #bodyMenu .carousel .carousel-control-next-icon {
-      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>"); }
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356070e'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+      background-size: 20px;
+      background-color: white;
+      border-radius: 20px; }
 
 /* Estilo de la página "Contacto" */
 #bodyContacto {
@@ -367,12 +382,20 @@ nav {
 /* Estilo para diapositivos de ancho mayor a 992px */
 @media only screen and (min-width: 992px) {
   .tituloPag {
-    font-size: 60px;
-    margin: 2vw auto 4vw auto; }
+    font-size: 60px; }
   header .logoConTitulo {
     margin-top: 2vw; }
-  .navbar #navbarNav .nav-item {
-    margin: 0 4vw; }
+  header .logoConTitulo__logo {
+    height: 8vw; }
+  header .logoConTitulo__titulo {
+    font-size: 8vw;
+    margin-bottom: -4vw; }
+  .navbar {
+    font-size: 1.5vw; }
+    .navbar #navbarNav {
+      margin-top: 1vw; }
+      .navbar #navbarNav .nav-item {
+        margin: 0 5vw; }
   .textoSeccion {
     padding: 1.5vw; }
   .textoSeccion__titulo {
@@ -409,11 +432,11 @@ nav {
     grid-template-columns: 50% 50%; }
   #bodyMenu .titulosMenu {
     font-size: 42px;
-    margin-bottom: 1.5vw; }
-  .carousel {
-    margin: 1.5vw auto;
-    width: 90%; }
-    .carousel .carousel-caption {
+    margin-bottom: 0; }
+  #bodyMenu .carousel {
+    margin: 10px auto 40px;
+    width: 75%; }
+    #bodyMenu .carousel .carousel-caption {
       padding: 1vw; }
   #bodyContacto {
     grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "formulario formulario" "mapaContacto datosContacto" "footer footer";
