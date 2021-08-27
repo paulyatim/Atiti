@@ -345,7 +345,8 @@ nav {
       padding: 4px;
       margin: 5px 0;
       border: 0;
-      border-radius: 2px; }
+      border-radius: 2px;
+      background-color: white; }
     #bodyContacto #formularioContacto label {
       margin: 10px 0;
       font-weight: bold; }
