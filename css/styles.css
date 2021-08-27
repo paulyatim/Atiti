@@ -343,7 +343,9 @@ nav {
     #bodyContacto #formularioContacto input, #bodyContacto #formularioContacto textarea {
       width: 100%;
       padding: 4px;
-      margin: 5px 0; }
+      margin: 5px 0;
+      border: 0;
+      border-radius: 2px; }
     #bodyContacto #formularioContacto label {
       margin: 10px 0;
       font-weight: bold; }
@@ -352,6 +354,9 @@ nav {
     #bodyContacto #formularioContacto #subscripcion {
       width: auto;
       height: 12px; }
+    #bodyContacto #formularioContacto .boton_form {
+      font-size: 20px;
+      padding: 10px; }
 
 /* Estilo para diapositivos de ancho mayor a 600px */
 @media only screen and (min-width: 600px) {
@@ -440,13 +445,18 @@ nav {
       padding: 1vw; }
   #bodyContacto {
     grid-template-areas: "header header" "nav nav" "subtitulo subtitulo" "formulario formulario" "mapaContacto datosContacto" "footer footer";
-    grid-template-columns: 75% 25%; }
+    grid-template-columns: 80% 20%; }
     #bodyContacto #mapaContacto {
       margin-top: 1.5vw; }
       #bodyContacto #mapaContacto iframe {
-        height: 40vw; }
+        height: 40vw;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #56070e;
+        padding: 0; }
     #bodyContacto #datosContacto {
+      padding: 1vw;
       margin-top: 1.5vw;
       height: 40vw; }
     #bodyContacto #formularioContacto {
-      width: 50%; } }
+      width: 60%; } }
